@@ -151,7 +151,7 @@ export function Signup(props)
                 }
                 <button className={"btn btn-primary font-[cookie] text-3xl w-[90%]"}>Sign in?</button>
             </div>
-            <img src={"../images/Online test-pana.png"} className={"lg:w-[35%]"}/>
+            <img src={"/images/Online test-pana.png"} className={"lg:w-[35%]"}/>
         </div>
     </div>)
 }
@@ -163,7 +163,7 @@ export function Otp()
                 <p className={"font-[cookie] text-3xl  lg:text-4xl"}>You're almost there! Just verify the OTP to finish setting up your account</p>
             </div>
             <div className={"flex flex-col-reverse lg:flex-col ml-4 lg:flex-row lg:justify-evenly lg:mt-8 "}>
-                <img src={".././images/Enter OTP-bro.svg"} className={"w-[80%] ml-6 mt-2 lg:w-[35%] lg:ml-0 lg:mt-0"}/>
+                <img src={"/images/Enter OTP-bro.svg"} className={"w-[80%] ml-6 mt-2 lg:w-[35%] lg:ml-0 lg:mt-0"}/>
                 <div className={" lg:w-[40%] h-[400px]   flex flex-col justify-evenly lg:mt-22"}>
                     <p className={"font-[cookie] text-3xl "} >
                         We've sent an OTP to {localStorage.getItem("mail")}. Please enter it below to verify your  mail
