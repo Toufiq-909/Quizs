@@ -8,7 +8,9 @@ let a=async ()=>{
     await check();
 }
 a()
-app.use(cors())
+app.use(cors({
+    origin:["https://quizs-ed8a.onrender.com","http://localhost:3000"]
+}))
 app.use(express.json())
 app.use("/user",user)
 app.listen(3000)
