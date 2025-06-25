@@ -20,7 +20,10 @@ userrouter.get("/mail",async (req,res)=>{
     let finduser= await user.findOne({
         mail:req.query.mail
     })
-    if(finduser==null)
+    let otpuser= await otp.findOne({
+        mail:req.query.mail
+    })
+    if(finduser==null && otpuser==null)
     {
         return res.sendStatus(200);
     }
