@@ -9,7 +9,7 @@ let a=async ()=>{
 }
 a()
 app.use(cors({
-    origin:["https://quizs-1.onrender.com/","http://localhost:5173"]
+    origin:["https://quizs-1.onrender.com","http://localhost:5173"]
 }))
 app.use(express.json())
 app.use("/user",user)
